@@ -1,0 +1,42 @@
+.catogory {
+	padding: 0% 4%;
+}
+.catogory-recipes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 30px;
+}
+.catogory-recipes .recipe-card {
+	max-width: 230px;
+}
+.catogory-recipes .recipe-image {
+	height: 150px;
+}
+@media only screen and (max-width: 1141px) {
+	.catogory-recipes {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 20px;
+	}
+	.catogory-recipes .recipe-card {
+		max-width: 220px;
+	}
+	.catogory-recipes .recipe-image {
+		height: 130px;
+	}
+}
+@media only screen and (max-width: 459px) {
+	.catogory-recipes {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		grid-gap: 15px;
+	}
+	.catogory-recipes .recipe-card {
+		min-width: 150px;
+	}
+	.catogory-recipes .recipe-image {
+		height: 105px;
+	}
+	.catogory-recipes .recipe-name {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,231 @@
+/* Profile container style */
+.profile-page {
+	padding: 80px 4% 0px 4%;
+}
+.profile-container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Profile header style */
+.profile-header {
+	display: flex;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.6);
+
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+/* Profile picture style */
+.profile-picture {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 20px;
+	margin: auto;
+}
+
+.profile-picture .profile-icon {
+	width: 100%;
+	height: 100%;
+
+	margin: 0px;
+}
+/* Profile picture image style */
+.profile-picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Profile info style */
+.profile-info {
+	flex: 1;
+	text-align: center;
+}
+
+/* Recipe name style */
+.recipe-name {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+}
+
+/* Follower and following style */
+.follower-following {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.follower-following div {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+/* Follow button style */
+.follow-button,
+.edit-button {
+	background-color: #3897f0;
+	color: #fff;
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+	margin: 10px 20px 2px 20px;
+	min-width: 100px;
+}
+
+/* Profile description style */
+.profile-description {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.headding {
+	margin: 20px 0px 10px 0px;
+}
+
+/**______________________followers_____________________*/
+.extra-page {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(57, 56, 56, 0.622);
+}
+.deatils_wrapper {
+	width: min(350px, 100%);
+	height: min(450px, 100%);
+	border-radius: 30px;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-top: 30px;
+}
+.deatils_wrapper h2 {
+	text-align: center;
+	width: 100%;
+	position: inherit;
+	top: 0;
+	color: rgb(223, 35, 110);
+}
+
+.deatils_wrapper .close-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	transform: translate(40%, -50%);
+	border-radius: 50%;
+	background: gray;
+}
+.close-btn .icon {
+	width: 100%;
+	height: 100%;
+}
+.profile-list {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	width: 100%;
+	max-height: 100%;
+	overflow-y: scroll;
+}
+.profile-list::-webkit-scrollbar {
+	display: none;
+}
+.profile-list li {
+	margin-top: 10px;
+}
+.wrap {
+	display: flex;
+	align-items: center;
+}
+.wrap h3 {
+	margin-left: 10px;
+}
+.wrap .image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.wrap .profile-icon {
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 20px;
+}
+.wrapper .button {
+	width: min(100%, 90px);
+}
+
+.recipes-grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 30px;
+}
+.recipes-grid-container .recipe-card {
+	max-width: 230px;
+}
+.recipes-grid-container .recipe-image {
+	height: 150px;
+}
+@media only screen and (max-width: 1141px) {
+	.recipes-grid-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 20px;
+	}
+	.recipes-grid-container .recipe-card {
+		max-width: 220px;
+	}
+	.recipes-grid-container .recipe-image {
+		height: 130px;
+	}
+}
+@media only screen and (max-width: 459px) {
+	.recipes-grid-container {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		grid-gap: 15px;
+	}
+	.recipes-grid-container .recipe-card {
+		min-width: 150px;
+	}
+	.recipes-grid-container .recipe-image {
+		height: 105px;
+	}
+	.recipes-grid-container .recipe-name {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 499px) {
+	.profile-picture {
+		width: 80px;
+		height: 80px;
+	}
+	.profile-info {
+		width: 100%;
+	}
+	.follow-button,
+	.edit-button {
+		padding: 4px;
+		margin: 10px 3px;
+		width: min(30px, 100%);
+	}
+}

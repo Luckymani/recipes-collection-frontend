@@ -1,0 +1,59 @@
+/* CSS for PageNotFound component */
+.page-not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	z-index: 888;
+}
+
+.error-title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center; /* Add text-align center to align title properly */
+}
+.buttons {
+	margin: 10px 0px;
+}
+.buttons > span {
+	padding: 0px 15px;
+}
+
+.error-message {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* .error-buttons {
+	display: flex; 
+} */
+
+.error-button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin: 10px 0px; /* Add margin to separate buttons */
+}
+
+.error-button:hover {
+	background-color: #0056b3;
+}
+
+.error-link {
+	color: #007bff;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.error-link:hover {
+	text-decoration: underline;
+}

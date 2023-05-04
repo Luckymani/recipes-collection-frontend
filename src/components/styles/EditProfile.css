@@ -1,0 +1,27 @@
+.deatils_wrapper .profile-picture {
+	margin-top: 20px;
+	width: 150px;
+	height: 150px;
+}
+.deatils_wrapper .button {
+	margin-top: 10px;
+}
+.update-profile input {
+	width: 95%;
+	font-size: 17px;
+	color: black;
+	font-weight: 600;
+}
+.update-profile textarea {
+	width: 95%;
+	height: 60px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+}
+.update-profile button[type="submit"] {
+	width: 50%;
+}
+.deatils_wrapper .hide {
+	display: none;
+}

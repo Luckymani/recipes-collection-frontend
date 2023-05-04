@@ -1,0 +1,38 @@
+.buttons-container {
+	position: fixed;
+	top: 90px;
+	right: 4%;
+	display: flex;
+	align-items: flex-end;
+	z-index: 99;
+}
+
+.button-icon {
+	font-size: 24px;
+}
+
+.add-button,
+.wishlist-button {
+	width: 35px;
+	height: 35px;
+	border-radius: 25px;
+	margin-left: 10px;
+	background-color: #007bff; /* Change to desired color */
+	color: #fff; /* Change to desired color */
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+}
+
+.add-button:hover,
+.wishlist-button:hover {
+	background-color: #0056b3; /* Change to desired color on hover */
+}
+@media only screen and (max-width: 795px) {
+	.buttons-container {
+		display: none;
+	}
+}

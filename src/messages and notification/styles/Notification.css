@@ -1,0 +1,25 @@
+.notification {
+	position: fixed;
+	padding: 0.4rem 10px;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 0.25rem;
+	bottom: 10%;
+	right: 100px;
+	z-index: 99;
+}
+
+.notification.success {
+	background: #28a745;
+	color: #212529;
+}
+
+.notification.error {
+	background: #dc3545;
+	color: white;
+}
+
+.notification.warning {
+	background: #ffc107;
+	color: #212529;
+}

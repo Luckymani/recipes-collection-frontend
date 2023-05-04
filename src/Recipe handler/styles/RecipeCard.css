@@ -1,0 +1,86 @@
+/* External CSS for recipe card component */
+
+.recipe-card {
+	background-color: #f5f5f5;
+	min-width: 200px;
+	width: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
+	position: relative;
+	margin: auto;
+}
+.edit {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	width: 30px;
+	height: 30px;
+	background: white;
+	border-bottom-left-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.recipe-image {
+	width: 100%;
+	height: 130px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 0.2rem;
+}
+
+.recipe-details {
+	text-align: center;
+}
+
+.recipe-name {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+button {
+	padding: 8px;
+	border: none;
+	border-radius: 5px;
+	background-color: #008cba;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 3px 0px;
+}
+
+.recipe-author {
+	font-size: 0.9rem;
+	color: rgb(223, 35, 110);
+	margin-top: 0.2rem;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+
+.icons-container-wrapper {
+	padding: 0px 12px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 10px;
+	width: 100% !important;
+	height: 35px;
+	background: white;
+	margin-bottom: 10px;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.icon {
+	margin-right: 0.3rem;
+}
+
+.icon-label {
+	font-size: 0.9rem;
+}

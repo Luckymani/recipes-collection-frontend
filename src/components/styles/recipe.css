@@ -1,0 +1,9 @@
+.recipes {
+	padding: 0% 4%;
+	margin-top: 60px;
+}
+.recipes .loadmore {
+	margin: 30px 0px;
+	background: rgb(223, 35, 110);
+	padding: 10px 30px;
+}
