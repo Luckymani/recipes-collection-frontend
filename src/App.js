@@ -29,7 +29,12 @@ export const notificationContext = React.createContext();
 export const loadingContext = React.createContext();
 export const userContext = React.createContext();
 export const commentContext = React.createContext();
+
+
 function App() {
+	useEffect(()=>{
+		axios.defaults.withCredentials=true;
+	},[])
 	axios.defaults.withCredentials = true;
 
 	//*loading handler

@@ -26,10 +26,13 @@ const LoginPage = () => {
 			[name]: value,
 		});
 	};
+	
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 
+		// axios.defaults.withCredentials=true;
+		
 		await axios
 			.post(`${process.env.REACT_APP_SERVER_ADDRESS}/login`, formData)
 			.then((response) => {

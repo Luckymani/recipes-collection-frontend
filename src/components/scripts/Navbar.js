@@ -22,6 +22,9 @@ const Navbar = () => {
 	const [searchbarVisibilty, setSearchbarVisibility] = useState(false);
 	const [searchValue, setSearchValue] = useState();
 	const [arrayList, setArrayList] = useState([]);
+	useEffect(()=>{
+		axios.defaults.withCredentials=true
+	},[])
 
 	useEffect(() => {
 		if (!searchbarVisibilty) return;
