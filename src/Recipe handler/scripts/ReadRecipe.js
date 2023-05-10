@@ -55,6 +55,7 @@ function ReadRecipe() {
 			.post(`${process.env.REACT_APP_SERVER_ADDRESS}/profile/like`, { id })
 			.then((res) => {
 				recipe.likes = recipe.likes + 1;
+				setChanged(!changed)
 			})
 			.catch((err) => {
 				console.log(err.response.data.error);
@@ -66,6 +67,7 @@ function ReadRecipe() {
 			.post(`${process.env.REACT_APP_SERVER_ADDRESS}/profile/dislike`, { id })
 			.then((res) => {
 				recipe.likes = recipe.likes - 1;
+				setChanged(!changed)
 			})
 			.catch((err) => {
 				console.log(err.response.data.error);
@@ -105,9 +107,9 @@ function ReadRecipe() {
 							<img src={`${process.env.REACT_APP_SERVER_ADDRESS}/images/${recipe.imageFile}`} alt="recipe-image" />
 						</div>
 
-						{recipe.videoFile.length > 1 && (
+						{recipe.videoFile&& (
 							<div className="recipe-video">
-								<video src={`${process.env.REACT_APP_SERVER_ADDRESS}/videos/${recipe.videoFile}`} alt="recipe-video" />
+								<video src={`${process.env.REACT_APP_SERVER_ADDRESS}/videos/${recipe.videoFile}`} alt="recipe-video" controls/>
 							</div>
 						)}
 					</div>
