@@ -23,6 +23,7 @@ import Catogory from "./Recipe handler/scripts/catogory";
 import Buttons from "./components/scripts/wishlistbutton";
 import Comments from "./Recipe handler/scripts/comments";
 import Recipes from "./components/scripts/Recipes";
+import AboutPage from "./components/scripts/About";
 
 //?context that need to export
 export const notificationContext = React.createContext();
@@ -111,6 +112,7 @@ function App() {
 										<Route path="/accountactivation" element={<AccountActivation />}></Route>
 										<Route path="/" element={<Home />}></Route>
 										<Route path="/recipecard" element={<RecipeCard />}></Route>
+										<Route path="/about" element={<AboutPage/>}></Route>
 										<Route path="/addrecipe" element={<AddRecipe />}></Route>
 										<Route path="/catogory" element={<Catogory />}></Route>
 										<Route path="/readrecipe/:id" element={<ReadRecipe />}></Route>

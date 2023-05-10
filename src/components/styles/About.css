@@ -1,0 +1,74 @@
+/* AboutPage.css */
+
+.about-container {
+    margin: 60px auto;
+    padding:0px 4%;
+  }
+  h1{
+    color: rgb(223, 35, 110);
+  }
+  h2{
+    color:#0056B3;
+  }
+  .about-title {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-sai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .about-image {
+    width: 200px;
+    height: 200px;
+    border:1px solid rgb(223, 35, 110);
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about-link {
+    color: #e6af2e;
+    font-weight: bold;
+  }
+  
+  .about-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2.5rem;
+    }
+    
+    .about-subtitle {
+      font-size: 1.8rem;
+    }
+    
+    .about-text {
+      font-size: 1rem;
+    }
+    
+    .about-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
